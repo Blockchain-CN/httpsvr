@@ -1,0 +1,4 @@
+package: github.com/Blockchain-CN/httpsvr
+import:
+- package: github.com/julienschmidt/httprouter
+- package: github.com/shengkehua/xlog4go
