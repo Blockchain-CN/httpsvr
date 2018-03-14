@@ -82,7 +82,7 @@ func (s *Server) AddRoute(method, path string, ctrl IController) {
 			r.Body = ioutil.NopCloser(bytes.NewBuffer(body))
 			logger.Info("request_uri=%s||client_ip=%s||request_body=%s",
 				r.URL,
-				GetClientAddr(r),
+				r.Host,
 				string(body))
 		}
 		// 解析输入参数
